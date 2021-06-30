@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, TextInput, Button, TouchableHighlight } from 'react-native'
+import { View, Text, Image, TextInput,  TouchableOpacity } from 'react-native'
 import { logindark } from './LoginDark_Style';
 
 export default function LoginDark() {
@@ -14,10 +14,10 @@ export default function LoginDark() {
                 <Text style={logindark.Text}>Forget Password.?</Text>
             </View>
             <View style={logindark.container03}>
-                <TouchableHighlight style={logindark.btn} >
+                <TouchableOpacity style={logindark.btn} >
                  <Text style={{color:'white',fontSize:20 }}>LogIn</Text>
                     
-                </TouchableHighlight>
+                </TouchableOpacity>
             </View>
 
         </View>
