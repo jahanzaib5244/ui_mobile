@@ -4,7 +4,8 @@ import {Introstyle} from './IntroStyle';
 
 
 
-export default function Intro() {
+
+export default function Intro({navigation}) {
     return (
         
              <ImageBackground source={require('../../assets/bgImage.png')} style={Introstyle.bgimage}>
@@ -16,11 +17,11 @@ export default function Intro() {
                 <Text style={Introstyle.txt}>INMOBILIARIO </Text>
             </View>
             <View style={Introstyle.btncontainer}>
-            <TouchableOpacity style={Introstyle.btn} >
+            <TouchableOpacity onPress={()=>navigation.navigate('Login')} style={Introstyle.btn} >
                  <Text style={{color:'white',fontSize:20 }}>Iniciar sesion</Text>
                     
                 </TouchableOpacity>
-                <TouchableOpacity style={Introstyle.btn2} >
+                <TouchableOpacity onPress={()=>navigation.navigate('Singup')} style={Introstyle.btn2} >
                  <Text style={{color:'white',fontSize:20 }}>Crear cuenta</Text>
                     
                 </TouchableOpacity>

@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, ImageBackground, Image, ScrollView,TextIn
 import { Singupstyle } from './Singupstyle'
 
 
-export default function Singup() {
+export default function Singup(navigation) {
     return (
             <ScrollView>
         <ImageBackground source={require('../../assets/bgImage.png')} style={Singupstyle.bgimg}>

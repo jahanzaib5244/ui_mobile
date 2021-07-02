@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, ImageBackground, Image, TextInput } from 
 import { Loginstyle } from './Loginstyle'
 
 
-export default function Login() {
+export default function Login({navigation}) {
     return (
 
         <ImageBackground source={require('../../assets/bgImage.png')} style={Loginstyle.bgimg}>
@@ -25,7 +25,7 @@ export default function Login() {
                 </View>
                 <Text></Text>
                 <View style={Loginstyle.buttonsection}>
-                    <TouchableOpacity style={Loginstyle.btn} >
+                    <TouchableOpacity style={Loginstyle.btn} onPress={()=>navigation.navigate('Home')} >
                         <Text style={{ color: 'white', fontSize: 20 }}>Inicior sesion</Text>
 
                     </TouchableOpacity>
